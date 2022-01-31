@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ADMIN</title>
+<style>
+.style1 {
+ 
+  padding: 100px;
+  background: url(https://lavozdeanza.com/wp-content/uploads/2021/07/computer-768696_1920-900x600.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-top:10px;
+}
+</style>
+
+</head>
+<body >
+<div class=style1>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+
+   
+   <h1><b style="color:black" > PLACEMENT MANAGEMENT SYSTEM </b></h1><br>
+   
+   <b style="color:black">PLACEMENT DETAILS</b> &nbsp;&nbsp;&nbsp;<a th:href="@{'/placementindex'}"><input type="submit" class="btn btn-dark" value="Open" /></a><br><br><br>
+   <b style="color:black">COLLEGE DETAILS</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a th:href="@{'/collegeindex'}"><input type="submit" class="btn btn-dark" value="Open" /></a><br><br><br>
+   <b style="color:black">STUDENT DETAILS</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a th:href="@{'/studentindex'}"><input type="submit" class="btn btn-dark" value="Open" /></a><br><br><br>
+   
+   <form th:action="@{/logout}" method="post">
+        <input type="submit" class="btn btn-dark" value="Logout" />
+    </form>
+    </div>
+</body>
+</html>
